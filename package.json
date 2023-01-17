@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-player": "^1.6.2",
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "@turf/buffer": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "@vueform/multiselect": "^2.5.8",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "mapbox-gl": "^2.11.1",
+    "vue-multiselect": "^2.1.6"
+  }
+}
