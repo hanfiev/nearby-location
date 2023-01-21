@@ -1,4 +1,5 @@
 <template>
+  <div class="mobile"><Mobile /></div>
   <div v-if="loaderToggle"><Loader /></div>
   <div class="container">
     <Menu v-if="showMenu" class="menu"/>
@@ -133,7 +134,6 @@ body{
 .map{
   min-width: calc(100vh - 50px);
   height: calc(100vh - 50px);
-  
 }
 
 .material-symbols-rounded {
@@ -144,5 +144,47 @@ body{
   'GRAD' 0,
   'opsz' 24
 }
+.mobile{display: none}
 
+@media (max-width: 600px) {
+  .mobile {
+    display: block
+  }
+
+  .container{
+    display: none;
+    /* height: 100%; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    /* background-color: red; */
+  }
+  
+  .menu {
+    width: 90%;
+    margin: 20px;
+    height: 100%;
+    /* background-color: yellow; */
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+  }
+
+  .results {
+    width: 90%;
+    margin: 20px;
+    height: 50vh;
+    /* background-color: yellow; */
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+  }
+
+  .map{
+  /* width: 50px; */
+  background-color: green;
+  height: 300px;
+  min-width: 100vw;
+}
+}
 </style>
