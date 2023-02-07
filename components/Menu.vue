@@ -2,9 +2,9 @@
   <div>
     <div id="logo">
       <img src="~assets/img/logo.png" style="height: 60px;" alt="logo">
-      <div class="text">Nearby <br> Location Report</div>
+      <div class="text">Nearby <br> Location Explorer</div>
     </div>
-    <div id="desc">Collects data from OpenStreetMap with Overpass API and generates a report summarizing the features around the chosen point and measure  its distance.</div>
+    <div id="desc">Discover nearby locations and get a summary on the features and distance from your selected point.</div>
     <div id="radius">
       <div class="title">Search Radius (m)</div>
       <br>
